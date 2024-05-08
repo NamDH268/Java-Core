@@ -26,21 +26,24 @@ public class Exercise01 {
         System.out.println(message);
     }
 
-    /* void question04(){
+     void question04(){
         Position position = new Position();
+        position.name = PositionName.DEV;
 
-        Account account = new Account();
-        account.position = position;
-        String message = (account.position == "DEV")
+        String message = (position.name == PositionName.DEV)
                 ? "Đây là deverloper"
                 : "Người này không phải là Developer" ;
         System.out.println(message);
-    }*/
+    }
     void question07(){
-        int PositionName = 1;
+        Position position = new Position();
+        position.name = PositionName.DEV;
 
-        switch (PositionName){
-            case 1:
+        Account account = new Account();
+        account.position = position;
+
+        switch (account.position.name){
+            case DEV:
                 System.out.println("Đây là deverloper");
                 break;
             default:

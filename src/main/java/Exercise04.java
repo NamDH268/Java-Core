@@ -72,7 +72,14 @@ public class Exercise04 {
         String t1 = ten.substring(0,1).toUpperCase() + ten.substring(1).toLowerCase();
         System.out.println("t1 = " + t1);
     }
-    void Question08(){
-
+    int question11(String s){
+        int length = s.length();
+        int count = 0;
+        for (int i = 0; i < length; i++) {
+            if (s.charAt(i) == 'a'){
+                count++;
+            }
+        }
+        return count;
     }
 }

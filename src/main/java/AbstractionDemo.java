@@ -9,5 +9,16 @@ public class AbstractionDemo {
         cat.makeSound();
 
         // 3. Abstract class có thể không có abstract method nào
+
+        // interface
+        //Mặc định method: public abstract
+        // Không có constructor
+        // Không thể khởi tạo đối tượng
+        // từ khóa: implements
+        // Đa kế thừa
+        Bird bird = new Bird();
+        bird.fly();
+        bird.makeSound();
+        bird.run();
     }
 }

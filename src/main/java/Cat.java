@@ -1,6 +1,11 @@
-public class Cat extends Animal{
+public class Cat extends Animal implements Runnable{
     @Override
     public void makeSound() {
         System.out.println("Meow meow");
+    }
+
+    @Override
+    public void run() {
+        System.out.println("cat can run...");
     }
 }

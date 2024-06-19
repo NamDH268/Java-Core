@@ -33,6 +33,7 @@ public class UserRepository implements IUserRepository {
                 user.setRole(User.Role.valueOf(role));
                 user.setProSkill(rs.getString("pro_skill"));
                 user.setExpInYear(rs.getInt("exp_in_year"));
+                user.setProjectId(rs.getInt("ProjectId"));
                 users.add(user);
             }
             return users;
@@ -58,6 +59,7 @@ public class UserRepository implements IUserRepository {
                     user.setRole(User.Role.valueOf(role));
                     user.setProSkill(rs.getString("pro_skill"));
                     user.setExpInYear(rs.getInt("exp_in_year"));
+                    user.setProjectId(rs.getInt("ProjectId"));
                     return user;
                 }
                 return null;
@@ -85,6 +87,7 @@ public class UserRepository implements IUserRepository {
                     user.setRole(User.Role.valueOf(role));
                     user.setProSkill(rs.getString("pro_skill"));
                     user.setExpInYear(rs.getInt("exp_in_year"));
+                    user.setProjectId(rs.getInt("ProjectId"));
                     return user;
                 }
                 return null;

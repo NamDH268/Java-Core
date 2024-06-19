@@ -10,8 +10,6 @@ import java.util.List;
 public class UserController {
     private IUserService service;
 
-    public UserController(IUserService service) {
-    }
 
     /**
      * @return Danh sách user trong database
@@ -41,7 +39,7 @@ public class UserController {
     /**
      * Cách dùng:
      * <pre>{@code
-     * controller.create("Nguyễn Văn Khoa", "khoa.nv@gmail.com")
+     * controller.create("Đào Hải Nam", "nam.dh@gmail.com")
      * }
      * @param fullName Họ và tên của user
      * @param email Email của user

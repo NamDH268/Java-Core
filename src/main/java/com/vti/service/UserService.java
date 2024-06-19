@@ -12,8 +12,7 @@ import java.util.List;
 public class UserService implements IUserService {
     private IUserRepository repository;
 
-    public UserService(IUserRepository repository) {
-    }
+
 
     @Override
     public List<User> findAll() {

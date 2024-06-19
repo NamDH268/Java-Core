@@ -11,9 +11,6 @@ import java.util.List;
 public class UserFunction {
     private UserController controller;
 
-    public UserFunction(UserController controller) {
-    }
-
 
     public void showMenu() {
         while (true) {

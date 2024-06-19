@@ -8,6 +8,15 @@ public class User {
     private Role role;
     private String proSkill;
     private Integer expInYear;
+    private Integer ProjectId ;
+
+    public Integer getProjectId() {
+        return ProjectId;
+    }
+
+    public void setProjectId(Integer projectId) {
+        ProjectId = projectId;
+    }
 
     public User() {
     }
@@ -69,6 +78,6 @@ public class User {
     }
 
     public enum Role {
-        EMPLOYEE, ADMIN
+        EMPLOYEE, ADMIN, MANAGER
     }
 }

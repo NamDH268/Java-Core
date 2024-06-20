@@ -1,3 +1,4 @@
+
 package com.vti.util;
 
 import java.util.Scanner;

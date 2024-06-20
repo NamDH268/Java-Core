@@ -1,3 +1,4 @@
+
 package com.vti.entity;
 
 import lombok.Getter;
@@ -80,6 +81,6 @@ public class User {
     }
 
     public enum Role {
-        EMPLOYEE, MANAGER
+        ADMIN, EMPLOYEE, MANAGER
     }
 }
